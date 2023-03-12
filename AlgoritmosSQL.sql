@@ -1,4 +1,4 @@
---a)
+--a) Fazer um algoritmo que leia 1 número e mostre se são múltiplos de 2,3,5 ou nenhum deles
 DECLARE @num  INT,
         @cont INT,
 		@test_mult2  INT,
@@ -77,7 +77,7 @@ END
 				 PRINT(CAST(@num AS VARCHAR(10))+ ' não é um multiplo nem de 2, 3 ou 5')
                  END
 
---b)
+--b) Fazer um algoritmo que leia 3 números e mostre o maior e o menor
 
 DECLARE @v1   INT,
         @v2   INT,
@@ -120,8 +120,8 @@ IF(@v1 > @v2 AND @v1 > @v3 AND @v2 > @v3)
 	  PRINT(CAST(@maior AS VARCHAR(10)) +' '+ CAST(@menor AS VARCHAR(10)))
 
 	  
---c)
---1 1 2 3 5 8 13 21
+--c)Fazer um algoritmo que calcule os 15 primeiros termos da série
+--1,1,2,3,5,8,13,21,... E calcule a soma dos 15 termos
 
 CREATE FUNCTION Fibonacci_Iterative (@n INT)
 RETURNS INT
@@ -162,7 +162,7 @@ PRINT @soma
 
 
 
---d)
+--d)Fazer um algoritmo que separa uma frase, colocando todas as letras em maiúsculo e em minúsculo (Usar funções UPPER e LOWER)
 DECLARE @frase  VARCHAR(20)
 
 SET @frase = 'PATOS'
@@ -179,7 +179,7 @@ END
    
 
 
---e)
+--e)Fazer um algoritmo que inverta uma palavra (Usar a função SUBSTRING)
 DECLARE @palavra   VARCHAR(20)
 
 SET @palavra = 'possibilidade'
